@@ -36,11 +36,11 @@ const Navbar = () => {
             {/* Heading */}
             <div className="w-full absolute top-[120px] md:top-[150px] left-0 z-10 flex flex-col">
                 <div className="w-[90%] mx-auto h-auto flex items-center justify-center flex-col text-center">
-                    <h1 className="text-3xl md:text-7xl font-semibold text-white w-full md:w-[70%]">
+                    <h1 className="text-3xl mt-3 md:text-7xl font-semibold text-white w-full md:w-[70%]">
                         Study <span className="text-[#13e0eb]">MBBS</span> At{' '}
                         <span className="text-[#13e0eb]">Uzbekistan's</span> Leading Universities
                     </h1>
-                    <button className="mt-8 md:mt-[50px] bg-[#13e0eb] w-[140px] md:w-[180px] h-[50px] md:h-[70px] p-2 rounded-md text-white text-lg md:text-2xl font-semibold">
+                    <button className="mt-8 md:mt-[50px] bg-[#13e0eb] w-[120px] md:w-[180px] h-[50px] md:h-[70px] p-2 rounded-md text-white text-lg md:text-2xl font-semibold">
                         Apply Now
                     </button>
                 </div>

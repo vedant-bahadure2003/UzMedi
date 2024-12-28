@@ -1,31 +1,32 @@
-import Navbar from "./_components/navbar";
-import doctor from "../../public/Images/doctor.png";
 import Image from "next/image";
-import Footer from "./_components/footer";
-import HorizontalBox from "./_components/horizontalBox";
-import CurveImg from "./_components/curveImg";
+import Navbar from "./_components/navbar";
 import { PiArrowCircleUpRight } from "react-icons/pi";
-import Galary from "./_components/galary";
+import WhyStudy from "./_components/whyStudy";
+import CurveImg from "./_components/curveImg";
+import Testimonials from "./_components/testimonial";
 import Partner from "./_components/patner";
 import Blog from "./_components/blog";
-import Testimonials from "./_components/testimonial";
-import WhyStudy from "./_components/whyStudy";
+import Galary from "./_components/galary";
+import HorizontalBox from "./_components/horizontalBox";
+import Footer from "./_components/footer";
+import doctor from "../../public/Images/doctor.png"
+import Univercity from "./_components/university";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       {/* Background Image Section */}
-      <div className="h-[120vh] w-full object-cover relative ">
+      <div className="h-[120vh] w-full object-cover relative">
         <div>
           {/* Background Image */}
           <img
-            className="h-[70vh] md:h-[100vh] w-full object-cover"
+            className="h-[80vh] md:h-[100vh] w-full object-cover"
             src="https://plus.unsplash.com/premium_photo-1733288413391-a88bbe8be696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fFV6YmVraXN0YW4lMjBob3NwaXRhbCUyMGltYWdlfGVufDB8fDB8fHww"
             alt="g"
           />
           {/* Overlay */}
-          <div className="h-[70vh] md:h-[100vh] w-full bg-black opacity-65 absolute top-0"></div>
+          <div className="h-[80vh] md:h-[100vh] w-full bg-black opacity-65 absolute top-0"></div>
           {/* Stats Section */}
           <div className="h-[20vh] w-full bg-[#fffbef]">
             <div className="w-[90%] mx-auto h-full flex flex-wrap justify-start gap-4 items-center">
@@ -41,7 +42,7 @@ export default function Home() {
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">10+</h1>
                 <p className="text-sm sm:text-base font-semibold text-center">Universities affiliated with us!</p>
               </div>
-              <div className="border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-2">
+              <div className="px-3 md:px-5 flex flex-col items-center justify-center gap-2">
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">100+</h1>
                 <p className="text-sm sm:text-base font-semibold text-center">Vice Assistance</p>
               </div>
@@ -52,14 +53,14 @@ export default function Home() {
         <div>
           <Image
             src={doctor}
-            alt="dsd"
-            className="absolute bottom-0 right-4 md:right-10 w-[300px] md:w-[500px] lg:w-[700px]"
+            alt="Doctor"
+            className="absolute bottom-72 right-4 md:right-10 w-[250px] sm:w-[300px] md:w-[500px] lg:w-[700px] xl:bottom-0 lg:bottom-0 lg:right-0"
           />
         </div>
       </div>
 
       {/* Floating Content */}
-      <div className="absolute bottom-10 sm:bottom-20 left-4 md:left-32 text-white text-sm md:text-xl w-[90%] md:w-[80%] flex flex-col gap-3">
+      <div className="absolute bottom-60 sm:bottom-20 left-4 md:left-32 text-white text-sm md:text-xl w-[90%] md:w-[80%] flex flex-col gap-3">
         <div className="font-semibold text-base md:text-xl">
           <h1>Study in NMC & WHO recognized medical colleges</h1>
         </div>
@@ -92,6 +93,7 @@ export default function Home() {
       </div>
 
       <WhyStudy />
+      <Univercity />
       <CurveImg />
       <Testimonials />
       <Partner />
