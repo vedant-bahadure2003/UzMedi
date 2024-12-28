@@ -1,101 +1,104 @@
+import Navbar from "./_components/navbar";
+import doctor from "../../public/Images/doctor.png";
 import Image from "next/image";
+import Footer from "./_components/footer";
+import HorizontalBox from "./_components/horizontalBox";
+import CurveImg from "./_components/curveImg";
+import { PiArrowCircleUpRight } from "react-icons/pi";
+import Galary from "./_components/galary";
+import Partner from "./_components/patner";
+import Blog from "./_components/blog";
+import Testimonials from "./_components/testimonial";
+import WhyStudy from "./_components/whyStudy";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <Navbar />
+      {/* Background Image Section */}
+      <div className="h-[120vh] w-full object-cover relative ">
+        <div>
+          {/* Background Image */}
+          <img
+            className="h-[70vh] md:h-[100vh] w-full object-cover"
+            src="https://plus.unsplash.com/premium_photo-1733288413391-a88bbe8be696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fFV6YmVraXN0YW4lMjBob3NwaXRhbCUyMGltYWdlfGVufDB8fDB8fHww"
+            alt="g"
+          />
+          {/* Overlay */}
+          <div className="h-[70vh] md:h-[100vh] w-full bg-black opacity-65 absolute top-0"></div>
+          {/* Stats Section */}
+          <div className="h-[20vh] w-full bg-[#fffbef]">
+            <div className="w-[90%] mx-auto h-full flex flex-wrap justify-start gap-4 items-center">
+              <div className="border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-2">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">12+</h1>
+                <p className="text-sm sm:text-base font-semibold text-center">Years of Experience</p>
+              </div>
+              <div className="border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-2">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">1000+</h1>
+                <p className="text-sm sm:text-base font-semibold text-center">Satisfied students counselled</p>
+              </div>
+              <div className="border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-2">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">10+</h1>
+                <p className="text-sm sm:text-base font-semibold text-center">Universities affiliated with us!</p>
+              </div>
+              <div className="border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-2">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">100+</h1>
+                <p className="text-sm sm:text-base font-semibold text-center">Vice Assistance</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        {/* Doctor Image */}
+        <div>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={doctor}
+            alt="dsd"
+            className="absolute bottom-0 right-4 md:right-10 w-[300px] md:w-[500px] lg:w-[700px]"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      </div>
+
+      {/* Floating Content */}
+      <div className="absolute bottom-10 sm:bottom-20 left-4 md:left-32 text-white text-sm md:text-xl w-[90%] md:w-[80%] flex flex-col gap-3">
+        <div className="font-semibold text-base md:text-xl">
+          <h1>Study in NMC & WHO recognized medical colleges</h1>
+        </div>
+        <div className="text-sm md:text-lg flex flex-col gap-2 w-full md:w-[45%]">
+          <h1 className="flex gap-2">
+            <span className="mt-[5px] text-[#0da9b0] text-lg md:text-2xl">
+              <PiArrowCircleUpRight />
+            </span>
+            Low-cost medical education starting from INR 5 Lacs*
+          </h1>
+          <h1 className="flex gap-2">
+            <span className="mt-[5px] text-[#0da9b0] text-lg md:text-2xl">
+              <PiArrowCircleUpRight />
+            </span>
+            No Donation & Capitation fees
+          </h1>
+          <h1 className="flex gap-2">
+            <span className="mt-[5px] text-[#0da9b0] text-lg md:text-2xl">
+              <PiArrowCircleUpRight />
+            </span>
+            Practice in India & across the world
+          </h1>
+          <h1 className="flex gap-2">
+            <span className="mt-[5px] text-[#0da9b0] text-lg md:text-2xl">
+              <PiArrowCircleUpRight />
+            </span>
+            Worldwide accepted the degree
+          </h1>
+        </div>
+      </div>
+
+      <WhyStudy />
+      <CurveImg />
+      <Testimonials />
+      <Partner />
+      <Blog />
+      <Galary />
+      <HorizontalBox />
+      <Footer />
+    </>
   );
 }
