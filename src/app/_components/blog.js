@@ -4,7 +4,7 @@ const Blog = () => {
         <>
             <div className="w-[80%] mx-auto mt-[100px]">
                 <h1 className="text-4xl font-bold text-center">
-                    Our Latest <span className="text-teal-500 underline"> Blog</span>
+                    Our Latest <span className="text-[#0da9b0] underline"> Blog</span>
                 </h1>
                 <p className="text-center mt-2">
                     Empowering Future Doctors with Valuable Information!
@@ -19,7 +19,7 @@ const Blog = () => {
                             <h1 className="text-xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
 
                             <p className="font-semibold text-gray-500 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nam sequi sint i...</p>
-                            <button className='bg-teal-500 px-4 py-1.5 font-semibold rounded-md text-white'>Read More</button>
+                            <button className='bg-[#0da9b0] px-4 py-1.5 font-semibold rounded-md text-white'>Read More</button>
 
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const Blog = () => {
                             <h1 className="text-xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
 
                             <p className="font-semibold text-gray-500 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nam sequi sint i...</p>
-                            <button className='bg-teal-500 px-4 py-1.5 font-semibold rounded-md text-white'>Read More</button>
+                            <button className='bg-[#0da9b0] px-4 py-1.5 font-semibold rounded-md text-white'>Read More</button>
 
                         </div>
                     </div>
@@ -45,7 +45,7 @@ const Blog = () => {
                             <h1 className="text-xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
 
                             <p className="font-semibold text-gray-500 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nam sequi sint i...</p>
-                            <button className='bg-teal-500 px-4 py-1.5 font-semibold rounded-md text-white'>Read More</button>
+                            <button className='bg-[#0da9b0] px-4 py-1.5 font-semibold rounded-md text-white'>Read More</button>
 
                         </div>
                     </div>

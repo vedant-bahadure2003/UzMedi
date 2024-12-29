@@ -6,7 +6,7 @@ const Galary = () => {
         <>
             <div className='w-[80%] mx-auto mt-[100px]'>
                 <h1 className="text-4xl font-bold text-center">
-                    Recent Photo <span className="text-teal-500 underline"> Gallery</span>
+                    Recent Photo <span className="text-[#0da9b0] underline"> Gallery</span>
                 </h1>
                 <p className="text-center mt-2">
                     Celebrating Achievements, One Click at a Time!
