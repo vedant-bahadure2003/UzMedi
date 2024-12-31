@@ -23,12 +23,13 @@ export default function Home() {
         </div>
 
         {/* Heading */}
-        <div className='absolute top-[120px] w-full mt-[20px] xl:mt-0'>
-          <div className="w-full absolute left-0 z-10 flex flex-col">
+        <div className="absolute top-[120px] w-full mt-[20px] xl:mt-0 z-10">
+          <div className="w-full absolute left-0 flex flex-col">
             <div className="w-[90%] mx-auto h-auto flex items-center justify-center flex-col text-center">
               <h1 className="text-4xl md:text-6xl lg:text-7xl mt-3 font-semibold text-white w-full">
                 Study <span className="text-[#13e0eb]">MBBS</span> At{' '}
-                <span className="text-[#13e0eb]">Uzbekistan's</span> <br className='hidden md:block' /> Leading Universities
+                <span className="text-[#13e0eb]">Uzbekistan's</span>{' '}
+                <br className="hidden md:block" /> Leading Universities
               </h1>
               <button className="mt-8 md:mt-[50px] bg-[#13e0eb] w-[120px] h-[50px] p-2 rounded-md text-white text-sm md:text-lg font-semibold">
                 Apply Now
@@ -42,9 +43,9 @@ export default function Home() {
           <img
             className="h-[100vh] w-full object-cover"
             src="https://plus.unsplash.com/premium_photo-1733288413391-a88bbe8be696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fFV6YmVraXN0YW4lMjBob3NwaXRhbCUyMGltYWdlfGVufDB8fDB8fHww"
-            alt="g"
+            alt="load"
           />
-          <div className="h-[100vh] w-full bg-black opacity-65 absolute top-0"></div>
+          <div className="h-[100vh] w-full  absolute top-0 bg-black opacity-50"></div>
         </div>
         {/* Stats Section */}
         <div className='absolute  w-full h-[20vh] bg-[#fffbef] '>

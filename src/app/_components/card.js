@@ -1,13 +1,14 @@
 
+import Image from 'next/image'
 import React from 'react'
-
+import universityImage from '../../../public/Images/university.png'
 
 const Card = () => {
     return (
         <>
             <div className='w-[270px] border-1 shadow-xl rounded-lg overflow-hidden'>
                 <div>
-                    <img src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80=" alt="" />
+                    <Image src={universityImage} alt="UnversityImage" />
                 </div>
                 <div className='p-3'>
                     <h1 className='text-[#0da9b0] font-semibold text-lg'>Andijan State Medical

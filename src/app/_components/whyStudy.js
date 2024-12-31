@@ -1,22 +1,19 @@
 import Image from "next/image";
 import DoctorImg from "../../../public/Images/doctor.png";
 import { PiArrowCircleUpRight } from "react-icons/pi";
+import whyStudy from "../../../public/Images/whyStudy.png"
 
 const WhyStudy = () => {
     return (
         <section className="bg-white flex items-center justify-between gap-16 flex-wrap md:flex-nowrap mt-[300px] lg:mt-[100px]">
-            <div className="relative w-[90%] max-w-[750px] mx-auto overflow-hidden">
-                <div className="absolute bg-[#0da9b0] w-full h-full top-12 left-0 z-0 rounded-tr-full rounded-br-full"></div>
+            <div className="relative w-[100%] lg:w-[80%] max-w-[750px] mx-auto overflow-hidden">
                 <Image
-                    src={DoctorImg}
+                    src={whyStudy}
                     alt="Doctor"
-                    className="relative z-10 w-full h-[300px] sm:h-[400px] object-contain bottom-0"
+                    className="z-10 w-full h-[400px] sm:h-[600px] object-contain "
                 />
             </div>
-
-
-
-            <div className="  w-full  mt-8  flex flex-col gap-5 ">
+            <div className=" w-full lg:mt-20 flex flex-col gap-5 ">
                 <h2 className="text-3xl font-bold text-gray-800 w-[70%] mx-auto">
                     Why Study MBBS in <span className="text-[#0da9b0]underline">Uzbekistan?</span>
                 </h2>

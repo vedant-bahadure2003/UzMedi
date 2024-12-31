@@ -1,5 +1,7 @@
+import Image from 'next/image';
 import React from 'react'
 import { PiArrowCircleUpRight } from "react-icons/pi";
+import group from "../../../public/Images/group.png"
 
 const CurveImg = () => {
     return (
@@ -28,9 +30,7 @@ const CurveImg = () => {
                         </div>
                     </div>
                     <div className='w-full lg:w-[50%] h-auto flex items-center justify-center relative py-8'>
-                        <img id='curveImg' className='z-10 object-cover w-[250px] sm:w-[350px] lg:w-[450px] h-[250px] sm:h-[350px] lg:h-[450px]' src="https://plus.unsplash.com/premium_photo-1681843126728-04eab730febe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                        <img id='curveBgImg' className='absolute bg-[#0da9b0] object-cover w-[250px] sm:w-[350px] lg:w-[450px] h-[250px] sm:h-[350px] lg:h-[450px]' src="g" alt="" />
-                        <img id='curveDashImg' className='absolute border-2 border-dashed border-[#0da9b0] object-cover w-[250px] sm:w-[350px] lg:w-[450px] h-[250px] sm:h-[350px] lg:h-[450px]' src="g" alt="k" />
+                        <Image src={group} alt='GroupImage' className=' z-10 object-cover w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] lg:w-[550px]  lg:h-[550px]' />
                     </div>
                 </div>
             </div>
