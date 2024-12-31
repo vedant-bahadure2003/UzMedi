@@ -48,8 +48,8 @@ export default function Home() {
           <div className="h-[100vh] w-full  absolute top-0 bg-black opacity-50"></div>
         </div>
         {/* Stats Section */}
-        <div className='absolute  w-full h-[20vh] bg-[#fffbef] '>
-          <div className="  ml-8 w-[70%] h-full sm:flex sm:flex-wrap sm:justify-start gap-2 sm:gap-2 sm:items-center mt-[170px] sm:mt-0 ">
+        <div className='absolute w-full h-[20vh] bg-[#fffbef] '>
+          <div className="ml-8 w-[85%] lg:w-[70%] h-full sm:flex sm:flex-wrap sm:justify-start gap-2 sm:gap-2 sm:items-center mt-[170px] sm:mt-0 ">
             <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1">
               <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">12+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Years of Experience</p>
@@ -71,7 +71,7 @@ export default function Home() {
 
         {/* Doctor Image */}
         <div className='absolute bottom-0 right-5 md:right-10 lg:right-20'>
-          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[600px] lg:h-[600px] object-cover' />
+          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[600px] lg:h-[600px] object-cover' priority />
         </div>
 
         {/* Content */}
