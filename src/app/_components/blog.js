@@ -14,9 +14,9 @@ const Blog = () => {
                 <p className="text-center mt-2">
                     Empowering Future Doctors with Valuable Information!
                 </p>
-                <div className="flex flex-wrap items-center justify-evenly mt-10 gap-5 ">
+                <div className="flex overflow-x-auto gap-10 mt-10 scrollbar-hide ">
                     {blogDetails.map((blog) => (
-                        <div key={blog.id}>
+                        <div key={blog.id} className="w-[300px] flex-shrink-0">
                             <div className="w-[300px] border border-gray-200 shadow-xl rounded-lg overflow-hidden">
                                 <div>
                                     <img

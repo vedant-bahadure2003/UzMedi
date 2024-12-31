@@ -3,7 +3,7 @@ import React from 'react'
 const Galary = () => {
     return (
         <>
-            <div className='w-[75%] mx-auto mt-[100px]'>
+            <div className='w-[85%] lg:w-[75%] mx-auto mt-[100px]'>
                 <h1 className="text-4xl font-bold text-center">
                     Recent Photo <span className="text-[#0da9b0] underline"> Gallery</span>
                 </h1>
@@ -15,27 +15,27 @@ const Galary = () => {
                         <img
                             src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
                             alt="Logo"
-                            className='w-[350px] h-fit rounded-lg'
+                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
                         />
                         <img
                             src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
                             alt="Logo"
-                            className='w-[350px] h-fit rounded-lg'
+                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
                         />
                         <img
                             src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
                             alt="Logo"
-                            className='w-[350px] h-fit rounded-lg'
+                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
                         />
                         <img
                             src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
                             alt="Logo"
-                            className='w-[350px] h-fit rounded-lg'
+                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
                         />
                         <img
                             src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
                             alt="Logo"
-                            className='w-[350px] h-fit rounded-lg'
+                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
                         />
 
                     </div>

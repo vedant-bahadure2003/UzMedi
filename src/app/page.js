@@ -9,7 +9,7 @@ import Blog from "./_components/blog";
 import Galary from "./_components/galary";
 import HorizontalBox from "./_components/horizontalBox";
 import Footer from "./_components/footer";
-import doctor from "../../public/Images/ladyDoctor.png"
+import doctor from "../../public/Images/doctor.png"
 import Univercity from "./_components/university";
 import Services from "./_components/servicies";
 
@@ -49,21 +49,21 @@ export default function Home() {
         </div>
         {/* Stats Section */}
         <div className='absolute  w-full h-[20vh] bg-[#fffbef] '>
-          <div className="w-[90%] mx-auto h-full sm:flex sm:flex-wrap sm:justify-start gap-4 sm:gap-4 sm:items-center mt-[170px] sm:mt-0 ">
-            <div className="lg:border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-0">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">12+</h1>
+          <div className="  ml-8 w-[70%] h-full sm:flex sm:flex-wrap sm:justify-start gap-2 sm:gap-2 sm:items-center mt-[170px] sm:mt-0 ">
+            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1">
+              <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">12+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Years of Experience</p>
             </div>
-            <div className="lg:border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-0  mt-4 sm:mt-0 ">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">1000+</h1>
+            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 ">
+              <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">1000+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Satisfied students counselled</p>
             </div>
-            <div className="lg:border-r-2 border-black px-3 md:px-5 flex flex-col items-center justify-center gap-0  mt-4 sm:mt-0 ">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">10+</h1>
+            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 ">
+              <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">10+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Universities affiliated with us!</p>
             </div>
-            <div className="px-3 md:px-5 flex flex-col items-center justify-center gap-0  mt-4 sm:mt-0 ">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl text-black font-extrabold">100+</h1>
+            <div className="px-3 md:px-3 flex flex-col items-center justify-center gap-1 mt-4 sm:mt-0 ">
+              <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">100+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Vice Assistance</p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
 
         {/* Doctor Image */}
         <div className='absolute bottom-0 right-5 md:right-10 lg:right-20'>
-          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[650px] lg:h-[650px] object-cover' />
+          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[600px] lg:h-[600px] object-cover' />
         </div>
 
         {/* Content */}
