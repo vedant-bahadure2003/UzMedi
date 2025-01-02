@@ -1,39 +1,45 @@
-import Image from 'next/image'
-import React from 'react'
-import Logo from "../../../public/Images/logo.png"
-
+import Image from "next/image";
+import React from "react";
+import universityimg1 from "../../../public/Images/universityimg1.png";
+import universityimg2 from "../../../public/Images/universityimg2.png";
+import universityimg3 from "../../../public/Images/universityimg3.png";
+import universityimg4 from "../../../public/Images/universityimg4.png";
 const Partner = () => {
     return (
         <>
-            <div className='w-[80%] mx-auto mt-[100px]'>
-                <h1 className='text-4xl font-bold text-center'>Our Partner <span className='text-[#0da9b0] underline'> Universities</span></h1>
-                <p className='text-center mt-2'>We are affiliated with these medical universities</p>
-                <div className=' flex flex-wrap items-center justify-center lg:justify-between'>
+            <div className="w-[80%] mx-auto mt-[50px]">
+                <h1 className="text-[40px] font-semibold text-center">
+                    Our Partner{" "}
+                    <span className="text-[#16A8AF] underline"> Universities</span>
+                </h1>
+                <p className="text-center mt-2 text-[16px]">
+                    We are affiliated with these medical universities
+                </p>
+                <div className="flex flex-wrap items-center lg:justify-evenly justify-center mt-12">
                     <Image
-                        src={Logo}
+                        src={universityimg1}
                         alt="Logo"
-                        className='w-[200px] object-cover h-[180px]  lg-w-[250px] lg:h-[250px]  '
+                        className="w-[120px] h-[120px] object-contain"
                     />
                     <Image
-                        src={Logo}
+                        src={universityimg2}
                         alt="Logo"
-                        className='w-[200px] object-cover h-[180px]  lg-w-[250px] lg:h-[250px]  '
+                        className="w-[120px] h-[120px] object-contain"
                     />
                     <Image
-                        src={Logo}
+                        src={universityimg3}
                         alt="Logo"
-                        className='w-[200px] object-cover h-[180px]  lg-w-[250px] lg:h-[250px] '
+                        className="w-[120px] h-[120px] object-contain"
                     />
                     <Image
-                        src={Logo}
+                        src={universityimg4}
                         alt="Logo"
-                        className='w-[200px] object-cover h-[180px] lg-w-[250px] lg:h-[250px]  '
+                        className="w-[120px] h-[120px] object-contain"
                     />
-
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Partner
+export default Partner;

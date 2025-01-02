@@ -1,6 +1,5 @@
 import Image from "next/image";
-import DoctorImg from "../../../public/Images/doctor.png";
-import { PiArrowCircleUpRight } from "react-icons/pi";
+import vector from "../../../public/Images/vector.png"
 import whyStudy from "../../../public/Images/whyStudy.png"
 
 const WhyStudy = () => {
@@ -18,13 +17,36 @@ const WhyStudy = () => {
                     Why Study MBBS in <span className="text-[#0da9b0]underline">Uzbekistan?</span>
                 </h2>
                 <div className='text-lg sm:text-xl flex flex-col gap-2 w-[70%] mx-auto'>
-                    <h1 className='flex gap-2'><span className='mt-[5px] text-[#0da9b0] text-2xl' ><PiArrowCircleUpRight /></span>A one-stop solution for students specialized in MBBS overseas
-                        education counseling, and admission </h1>
-                    <h1 className='flex gap-2'><span className='mt-[5px] text-[#0da9b0]  text-2xl' ><PiArrowCircleUpRight /></span>Complete support for the necessary documentation.</h1>
-                    <h1 className='flex gap-2'><span className='mt-[5px] text-[#0da9b0] text-2xl' ><PiArrowCircleUpRight /></span>Guaranteed Admission in top MBBS universities in Uzbekistan
-                        having low fees for Indian students</h1>
-                    <h1 className='flex gap-2'><span className='mt-[5px] text-[#0da9b0]  text-2xl' ><PiArrowCircleUpRight /></span>Free counseling to students and assistance such that it will help
-                        their career grow.</h1>
+                    <div className='text-lg sm:text-xl flex flex-col gap-2'>
+                        <div className='  flex text-xl gap-2'>
+                            <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
+
+                            <h1 className='flex gap-2'>Direct Admissions Students will get direct admission to the medical university of Uzbekistan </h1>
+                        </div>
+                        <div className='  flex text-xl gap-2'>
+                            <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
+
+                            <h1 className='flex gap-2'>100% Safety Uzbekistan is the safest European country.</h1>
+                        </div>
+                        <div className='  flex text-xl gap-2'>
+                            <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
+
+                            <h1 className='flex gap-2'>Low tuition fee Medical universities in Uzbekistan Offered low-cost education to Foreign students.</h1>
+                        </div>
+                        <div className='  flex text-xl gap-2'>
+                            <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
+
+                            <h1 className='flex gap-2'>Worldwide acceptance MBBS degree in Uzbekistan is accepted worldwide.</h1>
+                        </div>
+                        <div className='  flex text-xl gap-2'>
+                            <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
+
+                            <h1 className='flex gap-2'>Living & Accommodation Cost of living in Uzbekistan is low, around 62 USD.</h1>
+                        </div>
+
+
+                    </div>
+
                 </div>
                 <div className="w-[70%] mx-auto">
                     <button className=" mt-6 bg-[#0da9b0] text-white py-2 px-6 rounded-lg shadow-lg hover:bg-[#479b9f] w-[200px] mx-auto">

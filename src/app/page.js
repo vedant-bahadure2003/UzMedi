@@ -13,6 +13,8 @@ import doctor from "../../public/Images/doctor.png"
 import Univercity from "./_components/university";
 import Services from "./_components/servicies";
 import bgImage from '../../public/Images/backgroundImage.png'
+import ContactUs from "./_components/contactUs";
+
 
 export default function Home() {
   return (
@@ -52,7 +54,7 @@ export default function Home() {
               <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">12+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Years of Experience</p>
             </div>
-            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 md:w-[240px] lg:w-[300px] xl:w-[240px]">
+            <div className="xl:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 md:w-[240px] lg:w-[300px] xl:w-[240px]">
               <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">1000+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Satisfied students counselled</p>
             </div>
@@ -69,7 +71,7 @@ export default function Home() {
 
         {/* Doctor Image */}
         <div className='absolute bottom-0 right-5 md:right-10 lg:right-20'>
-          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] lg:h-[500px] lg:w-[500px] xl:h-[600px] object-cover' priority />
+          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] lg:h-[500px] lg:w-[500px] xl:h-[600px] object-cover hidden md:block' priority />
         </div>
 
         {/* Content */}
@@ -114,8 +116,12 @@ export default function Home() {
       <Partner />
       <Blog />
       <Galary />
-      <HorizontalBox />
-      <Footer />
+      {/* <HorizontalBox />   */}
+      <div>
+        <ContactUs />
+        <Footer />
+      </div>
+
     </>
   );
 }

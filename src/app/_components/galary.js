@@ -1,6 +1,9 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
+import { galaryData } from '../dataFile/galaryData/galaryData';
 
 const Galary = () => {
+    const [galary, setImage] = useState(galaryData);
     return (
         <>
             <div className='w-[85%] lg:w-[75%] mx-auto mt-[100px]'>
@@ -12,32 +15,13 @@ const Galary = () => {
                 </p>
                 <div className="mt-10 overflow-x-auto scrollbar-hide">
                     <div className="flex gap-10 w-max">
-                        <img
-                            src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
-                            alt="Logo"
-                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
-                        />
-                        <img
-                            src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
-                            alt="Logo"
-                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
-                        />
-                        <img
-                            src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
-                            alt="Logo"
-                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
-                        />
-                        <img
-                            src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
-                            alt="Logo"
-                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
-                        />
-                        <img
-                            src="https://media.istockphoto.com/id/1312706413/photo/modern-hospital-building.jpg?s=2048x2048&w=is&k=20&c=15TsJBPquZtgf8ciMtV6wlEAccnI5RJoNcqzFY9qe80="
-                            alt="Logo"
-                            className='w-[300px] lg:w-[350px] h-fit rounded-lg'
-                        />
-
+                        {
+                            galary.map((image, index) => (
+                                <div key={index}>
+                                    <img src={image.galaryImage} alt="img" className='w-[300px] h-[270px] lg:w-[350px] rounded-lg object-cover' />
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
