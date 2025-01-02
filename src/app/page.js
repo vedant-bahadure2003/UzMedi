@@ -12,6 +12,7 @@ import Footer from "./_components/footer";
 import doctor from "../../public/Images/doctor.png"
 import Univercity from "./_components/university";
 import Services from "./_components/servicies";
+import bgImage from '../../public/Images/backgroundImage.png'
 
 export default function Home() {
   return (
@@ -40,29 +41,26 @@ export default function Home() {
 
         {/* Background Image */}
         <div>
-          <img
-            className="h-[100vh] w-full object-cover"
-            src="https://plus.unsplash.com/premium_photo-1733288413391-a88bbe8be696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fFV6YmVraXN0YW4lMjBob3NwaXRhbCUyMGltYWdlfGVufDB8fDB8fHww"
-            alt="load"
+          <Image src={bgImage} alt="" loading="lazy" className="h-[100vh] w-full object-cover"
           />
           <div className="h-[100vh] w-full  absolute top-0 bg-black opacity-50"></div>
         </div>
         {/* Stats Section */}
         <div className='absolute w-full h-[20vh] bg-[#fffbef] '>
-          <div className="ml-8 w-[85%] lg:w-[70%] h-full sm:flex sm:flex-wrap sm:justify-start gap-2 sm:gap-2 sm:items-center mt-[170px] sm:mt-0 ">
-            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1">
+          <div className="ml-8 md:ml-4 w-[85%] md:w-[65%] lg:w-[60%] xl:w-[70%] h-full sm:flex sm:flex-wrap sm:justify-start gap-2 sm:gap-2 sm:items-center mt-[170px] sm:mt-0 ">
+            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1 md:w-[240px] lg:w-[300px] xl:w-[170px]">
               <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">12+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Years of Experience</p>
             </div>
-            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 ">
+            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 md:w-[240px] lg:w-[300px] xl:w-[240px]">
               <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">1000+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Satisfied students counselled</p>
             </div>
-            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 ">
+            <div className="lg:border-r-2 border-black px-3 md:px-3 flex flex-col items-center justify-center gap-1  mt-4 sm:mt-0 md:w-[240px] lg:w-[300px] xl:w-[240px]">
               <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">10+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Universities affiliated with us!</p>
             </div>
-            <div className="px-3 md:px-3 flex flex-col items-center justify-center gap-1 mt-4 sm:mt-0 ">
+            <div className="px-3 md:px-3 flex flex-col items-center justify-center gap-1 mt-4 sm:mt-0 md:w-[240px] lg:w-[300px] xl:w-[170px]">
               <h1 className="text-2xl sm:text-2xl lg:text-4xl text-black font-extrabold">100+</h1>
               <p className="text-sm sm:text-base font-semibold text-center">Vice Assistance</p>
             </div>
@@ -71,11 +69,11 @@ export default function Home() {
 
         {/* Doctor Image */}
         <div className='absolute bottom-0 right-5 md:right-10 lg:right-20'>
-          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[600px] lg:h-[600px] object-cover' priority />
+          <Image src={doctor} alt='load' className='w-[300px] h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] lg:h-[500px] lg:w-[500px] xl:h-[600px] object-cover' priority />
         </div>
 
         {/* Content */}
-        <div className='absolute bottom-[300px] md:bottom-[200px] lg:bottom-[230px] left-5 md:left-[100px] lg:left-[200px] w-[90%] md:w-[70%] text-white'>
+        <div className='absolute bottom-[300px] md:bottom-[200px] lg:bottom-[200px] xl:bottom-[230px] left-5 md:left-[100px] xl:left-[200px] lg:left-[100px]  w-[90%] md:w-[70%] text-white'>
           <div className="font-semibold text-sm md:text-base lg:text-xl">
             <h1>Study in NMC & WHO recognized medical colleges</h1>
           </div>
