@@ -7,8 +7,8 @@ const ContactUs = () => {
             <div className=" absolute top-0  w-full h-[450px] block sm:hidden ">
                 <Image src={formBgImg} alt='formImg' className='h-full w-full object-cover ' />
             </div>
-            <div className="w-full h-[440px] md:h-[350px] absolute top-0 ">
-                <div className="p-4 mx-auto rounded-lg  sm:border  sm:w-[70%] h-[450px] md:h-[350px] sm:border-gray-300 sm:shadow-lg " >
+            <div className="w-full h-[440px] md:h-[350px]  absolute  top-0 ">
+                <div className="p-4 mx-auto rounded-lg sm:border sm:w-[70%] h-[450px] md:h-[350px] sm:border-gray-300 sm:shadow-lg " >
                     <div className="">
                         <h1 className="text-2xl lg:text-3xl font-semibold text-center mb-6 text-gray-700">
                             Get Personalized Guidance for Your MBBS Journey
