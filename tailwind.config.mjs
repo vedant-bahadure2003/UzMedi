@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -10,6 +12,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      animation: {
+        'loop-scroll': 'loopScroll 3s linear infinite',
+      },
+      keyframes: {
+        loopScroll: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
     },
   },
