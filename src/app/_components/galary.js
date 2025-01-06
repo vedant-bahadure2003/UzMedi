@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 import { galaryData } from '../dataFile/galaryData/galaryData';
 
 const Galary = () => {
+
     const [galary, setImage] = useState(galaryData);
+
     return (
         <>
             <div className='w-[85%] lg:w-[75%] mx-auto mt-[100px]'>
