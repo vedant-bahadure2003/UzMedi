@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-// import { FaTwitter, FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import locationIcon from "../../../public/Images/LocationIcon.png";
 import callIcon from "../../../public/Images/callicon.png";
 import Image from "next/image";

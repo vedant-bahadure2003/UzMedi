@@ -4,7 +4,7 @@ import whyStudy from "../../../public/Images/whyStudy.png"
 
 const WhyStudy = () => {
     return (
-        <section className="bg-white flex items-center justify-between gap-16 flex-wrap md:flex-nowrap mt-[300px] lg:mt-[100px]">
+        <section className="bg-white flex items-center justify-between gap-16 flex-wrap md:flex-nowrap">
             <div className="relative w-[100%] lg:w-[80%] max-w-[750px] mx-auto overflow-hidden">
                 <Image
                     src={whyStudy}
