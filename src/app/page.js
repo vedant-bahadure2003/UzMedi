@@ -7,24 +7,19 @@ import Testimonials from "./_components/testimonial";
 import Partner from "./_components/patner";
 import Blog from "./_components/blog";
 import Galary from "./_components/galary";
-import HorizontalBox from "./_components/horizontalBox";
-import Footer from "./_components/footer";
+
 import doctor from "../../public/Images/doctor.png"
 import Univercity from "./_components/university";
 import Services from "./_components/servicies";
 import bgImage from '../../public/Images/backgroundImage.png'
 import ContactUs from "./_components/contactUs";
+import Footer from "./_components/Footer";
 
 
 export default function Home() {
   return (
     <>
       <div className=' h-[120vh] relative'>
-        {/* Navbar */}
-        <div className='absolute w-full'>
-          <Navbar />
-        </div>
-
         {/* Heading */}
         <div className="absolute top-[120px] w-full mt-[20px] xl:mt-0 z-10">
           <div className="w-full absolute left-0 flex flex-col">
@@ -117,11 +112,7 @@ export default function Home() {
       <Blog />
       <Galary />
       {/* <HorizontalBox />   */}
-      <div>
-        <ContactUs />
-        <Footer />
-      </div>
-
+      <ContactUs />
     </>
   );
 }

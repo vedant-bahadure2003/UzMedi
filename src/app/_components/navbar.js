@@ -27,25 +27,25 @@ const Navbar = () => {
                                     <h1 className=" text-xl md:text-lg text-black ">Uzbekistan Medi</h1>
                                 </Link>
                                 <Link href="/">
-                                    <h1 className=" text-xl md:text-lg text-black hover:text-[#45f6ff] cursor-pointer">Home</h1>
+                                    <h1 className=" text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Home</h1>
                                 </Link>
                                 <Link href="#">
-                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">About</h1>
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">About</h1>
                                 </Link>
                                 <Link href="/mbbs_in_uzbekistan">
-                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">MBBS in Uzbekistan</h1>
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">MBBS in Uzbekistan</h1>
                                 </Link>
                                 <Link href="#">
-                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Universities</h1>
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Universities</h1>
                                 </Link>
                                 <Link href="#">
-                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Blogs</h1>
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Blogs</h1>
                                 </Link>
                                 <Link href="#">
-                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Gallery</h1>
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Gallery</h1>
                                 </Link>
                                 <Link href="#">
-                                    <h1 className="text-xl md:text-lg text-black hover:text-[#14e1eb] cursor-pointer">Contact Us</h1>
+                                    <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Contact Us</h1>
                                 </Link>
                             </div>
                         </div>
@@ -53,25 +53,25 @@ const Navbar = () => {
 
                     <div className="hidden xl:flex flex-wrap gap-4 md:gap-6 mt-2 lg:mt-0">
                         <Link href="/">
-                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Home</h1>
+                            <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Home</h1>
                         </Link>
                         <Link href="#">
-                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">About</h1>
+                            <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">About</h1>
                         </Link>
                         <Link href="/mbbs_in_uzbekistan">
-                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">MBBS in Uzbekistan</h1>
+                            <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">MBBS in Uzbekistan</h1>
                         </Link>
                         <Link href="#">
-                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Universities</h1>
+                            <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Universities</h1>
                         </Link>
                         <Link href="#">
-                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Blogs</h1>
+                            <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Blogs</h1>
                         </Link>
                         <Link href="#">
-                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Gallery</h1>
+                            <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Gallery</h1>
                         </Link>
                         <Link href="#">
-                            <h1 className="text-base md:text-lg text-white hover:text-[#14e1eb] cursor-pointer">Contact Us</h1>
+                            <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Contact Us</h1>
                         </Link>
                     </div>
                 </div>
