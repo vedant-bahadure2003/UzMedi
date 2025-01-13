@@ -41,7 +41,7 @@ const Navbar = () => {
                                 <Link href="/blog">
                                     <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Blogs</h1>
                                 </Link>
-                                <Link href="#">
+                                <Link href="/gallery">
                                     <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Gallery</h1>
                                 </Link>
                                 <Link href="#">
@@ -67,7 +67,7 @@ const Navbar = () => {
                         <Link href="/blog">
                             <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Blogs</h1>
                         </Link>
-                        <Link href="#">
+                        <Link href="/gallery">
                             <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Gallery</h1>
                         </Link>
                         <Link href="#">

@@ -23,24 +23,29 @@ const MBBS_Uzbekistan = () => {
     return (
         <>
             <Herosection />
-            <Highlight />
-            <Planningform />
-            <YtFrame />
-            <Whystudy />
-            <FeesStructure />
-            <Eligibility />
-            <AdmissionProcess />
-            <Document />
-            <Syllabus />
-            <UniversitySection />
-            <Intake />
-            <Accreditation />
-            <UzbekistanVsIndiaMbbs />
-            <CourseOffered />
-            <CareerScope />
-            <PassingPercentage />
-            <HostelFacility />
+            <div className=' xl:w-[70%]'>
+                <div className='w-[80%] mx-auto'>
 
+                    <Highlight />
+                    <Planningform />
+                    <YtFrame />
+                    <Whystudy />
+                    <FeesStructure />
+                    <Eligibility />
+                    <AdmissionProcess />
+                    <Document />
+                    <Syllabus />
+                    <UniversitySection />
+                    <Intake />
+                    <Accreditation />
+                    <UzbekistanVsIndiaMbbs />
+                    <CourseOffered />
+                    <CareerScope />
+                    <PassingPercentage />
+                    <HostelFacility />
+                </div>
+
+            </div>
         </>
 
     )

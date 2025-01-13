@@ -17,17 +17,14 @@ import HomeHerosection from "./_components/HomeHerosection";
 export default function Home() {
   return (
     <>
-
       <HomeHerosection />
       <WhyStudy />
       <Univercity />
       <CurveImg />
       <Services />
-      <Testimonials />
       <Partner />
       <Blog />
       <Galary />
-      <ContactUs />
     </>
   );
 }

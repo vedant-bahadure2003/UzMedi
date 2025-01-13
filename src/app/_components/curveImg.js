@@ -20,24 +20,25 @@ const CurveImg = () => {
                                 <div className='  flex text-xl gap-2'>
                                     <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                                    <h1 className='flex gap-2'>A one-stop solution for students specialized in MBBS overseas education counseling, and admission </h1>
+                                    <h1 className='flex gap-2'>We primarily assists Indian students with pursuing medical education in Uzbekistan. </h1>
                                 </div>
                                 <div className='  flex text-xl gap-2'>
                                     <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                                    <h1 className='flex gap-2'>Complete support for the necessary documentation.</h1>
+                                    <h1 className='flex gap-2'>We provide end-to-end support, from choosing the right university to visa assistance.
+                                    </h1>
                                 </div>
                                 <div className='  flex text-xl gap-2'>
                                     <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                                    <h1 className='flex gap-2'>Guaranteed Admission in top MBBS universities in Uzbekistan
-                                        having low fees for Indian students</h1>
+                                    <h1 className='flex gap-2'>With years of experience, we have built strong relationships with top medical universities in Uzbekistan.
+                                    </h1>
                                 </div>
                                 <div className='  flex text-xl gap-2'>
                                     <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                                    <h1 className='flex gap-2'>Free counseling to students and assistance such that it will help
-                                        their career grow. </h1>
+                                    <h1 className='flex gap-2'>Uzbekistan Medi maintains transparent & ethical practices throughout the entire application process.
+                                    </h1>
                                 </div>
 
 

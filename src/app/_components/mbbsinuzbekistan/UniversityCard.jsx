@@ -18,7 +18,7 @@ const UniversityCard = ({ number }) => {
         <Image
           src={UniversityImage}
           alt="andijan"
-          className="w-full h-[158px] object-cover rounded-lg"
+          className="w-full h-[158px] md:h-[280px] lg:h-[350px] object-cover rounded-lg"
         />
         <ul className="list-disc text-sm p-3">
           <li>

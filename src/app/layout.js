@@ -30,9 +30,8 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
-        <ContactUs />
-        <Galary />
         <Testimonials />
+        <ContactUs />
         <Footer />
       </body>
     </html>

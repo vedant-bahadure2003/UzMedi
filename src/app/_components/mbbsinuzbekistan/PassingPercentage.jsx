@@ -61,7 +61,7 @@ const PassingPercentage = () => {
         </div>
       </div>
       {/*Education Loan Assistance For Studying MBBS In Uzbekistan. */}
-      <div className=" w-full lg:mt-20 flex flex-col gap-5 mt-[5px] bg-[#FFF9EA] py-2 ">
+      <div className=" w-[90%] mx-auto lg:mt-20 flex flex-col gap-5 mt-[5px] bg-[#FFF9EA] py-2 ">
         <div className="flex flex-col justify-center items-start w-[90%] mx-auto gap-2">
           <h2 className="text-xl font-bold text-[#0da9b0]">
             Education Loan Assistance For Studying MBBS In Uzbekistan.
@@ -197,7 +197,7 @@ const PassingPercentage = () => {
         </div>
       </div>
       {/* Ready to Take the First Step Toward Your Medical Career?*/}
-      <div className="bg-[#FFF9EA] flex flex-col items-center justify-center  p-6 md:p-12  max-w-4xl mx-auto shadow-md shadow-gray-400 border border-blue-950 gap-5">
+      <div className="bg-[#FFF9EA] flex flex-col items-center justify-center  p-6 md:p-12  w-[90%] mx-auto shadow-md shadow-gray-400 border border-blue-950 gap-5 ">
         <Image src={rafiki} alt="rafiki" className="mx-auto w-40 h-32" />
         <h1 className="text-[#005D61] text-center  w-[85%] mx-auto text-xl font-bold">
           Ready to Take the First Step Toward Your Medical Career?

@@ -4,7 +4,7 @@ const YtFrame = () => {
   return (
     <>
       {/* IFrame */}
-      <div className="h-[250px] sm:h-[400px] md:h-[550px] flex items-center justify-center w-full mt-[20px] sm:mt-0 shadow-md shadow-gray-400">
+      <div className="h-[250px] sm:h-[400px] md:h-[550px] flex items-center justify-center w-[90%] mt-[20px] sm:mt-0 shadow-md mx-auto shadow-gray-400">
         <div className=" h-full w-[85%] ">
           {/* <iframe
                         className="w-full h-full object-cover"

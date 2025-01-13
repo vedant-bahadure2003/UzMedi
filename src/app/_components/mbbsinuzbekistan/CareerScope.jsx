@@ -151,7 +151,7 @@ const CareerScope = () => {
         </div>
       </div>
       {/* How Safe Is Uzbekistan For Indian Students? */}
-      <div className="  lg:mt-20 flex flex-col gap-5 mt-[15px] bg-[#FFF9EA] py-2 ">
+      <div className="w-[90%] mx-auto  lg:mt-20 flex flex-col gap-5 mt-[15px] bg-[#FFF9EA] py-2 ">
         <div className="flex flex-col justify-center items-start w-[90%] mx-auto  gap-2">
           <h2 className="text-xl font-bold text-[#0da9b0]">
             How Safe Is Uzbekistan For Indian Students?

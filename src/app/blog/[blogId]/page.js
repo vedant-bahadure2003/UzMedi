@@ -1,13 +1,11 @@
-'use client'
+'use client';
 import axios from 'axios';
 import { useParams } from 'next/navigation';
-import React, { useEffect, useState } from 'react'
-import collegeImg from '../../../../public/Images/collegeImg.png'
-import collegeBgImg from '../../../../public/Images/collegeBgImg.png'
+import React, { useEffect, useState } from 'react';
+import collegeImg from '../../../../public/Images/collegeImg.png';
+import collegeBgImg from '../../../../public/Images/collegeBgImg.png';
 import Profile from "../../../../public/Images/profile.png";
 import rightsign from "../../../../public/Images/vector.png";
-
-
 import Image from 'next/image';
 import Blog from '@/app/_components/blog';
 
@@ -15,146 +13,119 @@ const page = () => {
     const params = useParams();
     const { blogId } = params;
     const [blogs, setBlogs] = useState();
+
     const blogDetails = async () => {
-        const response = await axios(`http://localhost:3000/api/blog/${blogId}`)
-        setBlogs(response.data.blog)
-    }
+        const response = await axios(`http://localhost:3000/api/blog/${blogId}`);
+        setBlogs(response.data.blog);
+    };
+
     useEffect(() => {
         blogDetails();
-    }, [blogId])
+    }, [blogId]);
 
     return (
         <>
-            {/* BgImage */}
-            <div className='relative  w-full h-[300px] sm:h-[400px]'>
-                {/* Bg Image */}
-                <div className='absolute h-[400px] w-full'>
+
+            {/* Background Image */}
+            <div className='relative w-full h-[300px] sm:h-[400px]'>
+                {/* Background Images */}
+                <div className='absolute w-full h-full'>
                     <Image src={collegeImg} alt='collegeBgImg' className='w-full object-cover block sm:hidden h-[300px]' />
                     <Image src={collegeBgImg} alt='collegeBgImg' className='w-full h-full object-cover hidden sm:block sm:h-[380px]' />
-                    <div className="h-[300px] sm:h-[380px] w-full  absolute top-0 bg-black opacity-60"></div>
+                    <div className="absolute top-0 w-full h-full bg-black opacity-60"></div>
                 </div>
+                {/* Breadcrumb */}
                 <div className='absolute top-20 sm:top-24 text-white left-5 text-sm font-semibold'>
                     <p>Home / Blogs / <span className='text-[#16A8AF]'>Blog</span></p>
                 </div>
-                {/* Heading */}
-                <div className='text-white absolute top-32 sm:top-44 w-[90%] sm:w-[50%] left-5  flex flex-col gap-1'>
-                    <h1 className="text-4xl sm:text-5xl font-semibold mt-3  w-full">
+                {/* Blog Heading */}
+                <div className='absolute top-32 sm:top-44 text-white left-5 w-[90%] sm:w-[50%] flex flex-col gap-1'>
+                    <h1 className="text-4xl sm:text-5xl font-semibold">
                         {blogs?.blogHeading}
                     </h1>
                 </div>
             </div>
-            {/* Profile */}
-            {/* Content */}
-            <div className="flex items-center h-[70px] justify-center mt-[10px]">
-                <div className=" w-[85%] flex flex-col gap-4 bg-white ">
-                    <div className="flex gap-3 w-full h-[50px] items-center justify-start">
-                        <div className="w-[50px] h-[50px]">
-                            <Image
-                                src={Profile}
-                                alt="profile"
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                        <div className="font-semibold">
-                            <h2>XYZ Employee</h2>
-                        </div>
-                        {/* <div>
-              <Image src={greentick} alt="" className="w-[23px] h-[23px] " />
-            </div> */}
-                    </div>
-                </div>
-            </div>
 
-            {/* Single Blog Page */}
-            <div className='w-full flex flex-col '>
-                <div className='w-[85%] mx-auto h-[250px] flex justify-center items-center'>
-                    <img src={blogs?.blogImage} alt='Blog Image' className='w-full h-[200px] rounded-md' />
-                </div>
-                <div>
-                    <p className='text-justify w-[85%] mx-auto'>
-                        {blogs?.blogContent}
-                    </p>
-                </div>
-            </div>
-
-            {/* why Study */}
-            {/* why study in uzbekistan */}
-            <div className=" w-full lg:mt-20 flex flex-col gap-5 py-6 ">
-                <h2 className="text-xl font-bold w-[85%] mx-auto text-[#0da9b0]">
-                    Why Study MBBS in Uzbekistan?
-                </h2>
-                <p className='w-[85%] mx-auto text-justify font-semibold'>
-                    Studying MBBS in Russia stands as the best option for Indian students seeking for the best and most cost-effective medical education in Russia. Top Medical universities in Russia are equipped with all the facilities to educate and train International medical aspirants to become excellent doctors.
-                </p>
-                <div className="text-lg sm:text-[18px] flex flex-col gap-2 w-[85%] mx-auto">
-                    <div className="text-sm sm:text-[18px] flex flex-col gap-2">
-                        <div className="flex gap-2">
-                            <Image
-                                src={rightsign}
-                                alt="vector"
-                                className="h-[18px] w-[18px] mt-1"
-                            />
-                            <p className="gap-2 text-justify">
-                                <span className='font-semibold'>Quality Education : </span>Recognized medical programs with modern facilities.
-                            </p>
-
-                        </div>
-                        <div className="flex gap-2">
-                            <Image
-                                src={rightsign}
-                                alt="vector"
-                                className="h-[18px] w-[18px] mt-1"
-                            />
-                            <p className="gap-2 text-justify">
-                                <span className='font-semibold'>Affordability : </span>Budget- friendly tuition fees and living costs
-                            </p>
-
-                        </div>
-                        <div className="flex gap-2">
-                            <Image
-                                src={rightsign}
-                                alt="vector"
-                                className="h-[18px] w-[18px] mt-1"
-                            />
-                            <p className="gap-2 text-justify">
-                                <span className='font-semibold'>English-Medium Program: </span> Easy access for international students.
-                            </p>
-
-                        </div>
-                        <div className="flex gap-2">
-                            <Image
-                                src={rightsign}
-                                alt="vector"
-                                className="h-[18px] w-[18px] mt-1"
-                            />
-                            <p className="gap-2 text-justify">
-                                <span className='font-semibold'>Academic Diversity: </span>Cultural and  Exposure too a global environment.
-                            </p>
-
-                        </div>
-                        <div className="flex gap-2">
-                            <Image
-                                src={rightsign}
-                                alt="vector"
-                                className="h-[18px] w-[18px] mt-1"
-                            />
-                            <p className="gap-2 text-justify">
-                                <span className='font-semibold'>Global Recognition: </span> Internationally accepted degrees and accreditations.
-                            </p>
-
+            <div className=' xl:w-[70%]'>
+                <div className='w-[80%] mx-auto'>
+                    {/* Profile Section */}
+                    <div className="flex items-center justify-center mt-4">
+                        <div className="w-[90%] sm:w-[85%] bg-white p-4 rounded-md shadow-md">
+                            <div className="flex gap-3 items-center">
+                                <div className="w-[50px] h-[50px]">
+                                    <Image
+                                        src={Profile}
+                                        alt="profile"
+                                        className="w-full h-full object-cover rounded-full"
+                                    />
+                                </div>
+                                <div className="font-semibold">
+                                    <h2>XYZ Employee</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-[85%] mx-auto">
-                    <button className=" mt-3 bg-[#0da9b0] text-white py-1 px-2 text-sm  rounded-md shadow-lg hover:bg-[#479b9f] w-full text-justify">
-                        <span className="text-black">Read More :</span> Why Choose
-                        Uzbekistan for MBBS Studies ?
-                    </button>
+
+                    {/* Blog Content */}
+                    <div className='w-full flex flex-col mt-4'>
+                        {/* Blog Image */}
+                        <div className='w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] mx-auto'>
+                            <img
+                                src={blogs?.blogImage}
+                                alt='Blog Image'
+                                className='w-full h-auto lg:h-[60vh] rounded-md object-cover'
+                            />
+                        </div>
+
+                        {/* Blog Text */}
+                        <div className='mt-4 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] mx-auto'>
+                            <p className='text-justify'>{blogs?.blogContent}</p>
+                        </div>
+                    </div>
+
+
+
+                    {/* Why Study MBBS Section */}
+                    <div className="w-full py-6">
+                        <h2 className="text-xl font-bold w-[90%] sm:w-[85%] mx-auto text-[#0da9b0]">
+                            Why Study MBBS in Uzbekistan?
+                        </h2>
+                        <p className='w-[90%] sm:w-[85%] mx-auto text-justify font-semibold'>
+                            Studying MBBS in Russia stands as the best option for Indian students seeking the best and most cost-effective medical education in Russia. Top Medical universities in Russia are equipped with all the facilities to educate and train international medical aspirants to become excellent doctors.
+                        </p>
+                        <div className="text-lg sm:text-[18px] flex flex-col gap-2 w-[90%] sm:w-[85%] mx-auto">
+                            {[
+                                { title: 'Quality Education', desc: 'Recognized medical programs with modern facilities.' },
+                                { title: 'Affordability', desc: 'Budget-friendly tuition fees and living costs.' },
+                                { title: 'English-Medium Program', desc: 'Easy access for international students.' },
+                                { title: 'Academic Diversity', desc: 'Cultural and exposure to a global environment.' },
+                                { title: 'Global Recognition', desc: 'Internationally accepted degrees and accreditations.' }
+                            ].map((item, index) => (
+                                <div className="flex gap-2" key={index}>
+                                    <Image
+                                        src={rightsign}
+                                        alt="vector"
+                                        className="h-[18px] w-[18px] mt-1"
+                                    />
+                                    <p className="gap-2 text-justify">
+                                        <span className='font-semibold'>{item.title} : </span>{item.desc}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="w-[90%] sm:w-[85%] mx-auto">
+                            <button className="mt-3 bg-[#0da9b0] text-white py-2 px-4 text-sm rounded-md shadow-lg hover:bg-[#479b9f]">
+                                <span className="text-black">Read More :</span> Why Choose Uzbekistan for MBBS Studies?
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Blog Component */}
+                    <Blog />
                 </div>
             </div>
-            <Blog />
         </>
-    )
-}
+    );
+};
 
-export default page
+export default page;

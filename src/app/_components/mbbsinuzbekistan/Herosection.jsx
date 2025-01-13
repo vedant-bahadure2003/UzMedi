@@ -36,38 +36,41 @@ const Herosection = () => {
         </div>
       </div>
       {/* Content */}
-      <div className="flex items-center   justify-center sm:mt-[100px] shadow-md shadow-gray-400">
-        <div className="h-fit w-[90%] flex flex-col gap-4 bg-white rounded-md">
-          <div className="flex gap-3 w-full h-[50px] items-center justify-start">
-            <div className="w-[50px] h-[50px]">
-              <Image
-                src={Profile}
-                alt="profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="font-semibold">
-              <h2>XYZ Employee</h2>
-            </div>
-            {/* <div>
+      <div className=" xl:w-[70%] ">
+        <div className="flex items-center   justify-center sm:mt-[100px] shadow-md shadow-gray-400 w-[72%] mx-auto ">
+          <div className="h-fit w-[90%] mx-auto flex flex-col gap-4 bg-white rounded-md">
+            <div className="flex gap-3 w-full h-[50px] items-center justify-start">
+              <div className="w-[50px] h-[50px]">
+                <Image
+                  src={Profile}
+                  alt="profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="font-semibold">
+                <h2>XYZ Employee</h2>
+              </div>
+              {/* <div>
               <Image src={greentick} alt="" className="w-[23px] h-[23px] " />
-            </div> */}
-          </div>
-          <div className="text-justify text-sm py-5">
-            <p>
-              Studying MBBS in Uzbekistan has been one of the most preferred
-              options for Indian students for decades now. Standing at the
-              prominent 8th position in the world in terms of the quality of
-              medical education, Russia has been home to thousands of Indian
-              MBBS students who are working as renowned and well-established
-              doctors today. <br />
-              As India and Uzbekistan share a cordial and friendly relationship,
-              the government of the Russian Federation offers subsidized medical
-              education to Indian students. The affordability of MBBS in Russia
-              encourages many Indian medical aspirants to pursue their dreams in
-              this largest country in the world which is home to more than 25
-              top medical universities around the globe.{" "}
-            </p>
+              </div> */}
+            </div>
+            <div className="text-justify text-sm py-5">
+              <p>
+                Studying MBBS in Uzbekistan has been one of the most preferred
+                options for Indian students for decades now. Standing at the
+                prominent 8th position in the world in terms of the quality of
+                medical education, Russia has been home to thousands of Indian
+                MBBS students who are working as renowned and well-established
+                doctors today. <br />
+                As India and Uzbekistan share a cordial and friendly
+                relationship, the government of the Russian Federation offers
+                subsidized medical education to Indian students. The
+                affordability of MBBS in Russia encourages many Indian medical
+                aspirants to pursue their dreams in this largest country in the
+                world which is home to more than 25 top medical universities
+                around the globe.{" "}
+              </p>
+            </div>
           </div>
         </div>
       </div>

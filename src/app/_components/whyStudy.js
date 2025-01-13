@@ -21,27 +21,37 @@ const WhyStudy = () => {
                         <div className='  flex text-xl gap-2'>
                             <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                            <h1 className='flex gap-2'>Direct Admissions Students will get direct admission to the medical university of Uzbekistan </h1>
+                            <h1 className='flex gap-2'>Get a high-quality medical degree at significantly lower costs compared to other countries. </h1>
                         </div>
                         <div className='  flex text-xl gap-2'>
                             <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                            <h1 className='flex gap-2'>100% Safety Uzbekistan is the safest European country.</h1>
+                            <h1 className='flex gap-2'>Study medicine entirely in English, making it easier for international students</h1>
                         </div>
                         <div className='  flex text-xl gap-2'>
                             <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                            <h1 className='flex gap-2'>Low tuition fee Medical universities in Uzbekistan Offered low-cost education to Foreign students.</h1>
+                            <h1 className='flex gap-2'>Your Uzbek medical degree will be respected and accepted worldwide.
+                            </h1>
                         </div>
                         <div className='  flex text-xl gap-2'>
                             <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                            <h1 className='flex gap-2'>Worldwide acceptance MBBS degree in Uzbekistan is accepted worldwide.</h1>
+                            <h1 className='flex gap-2'>Uzbek medical universities have a strong academic reputation & provide excellent medical training.
+                            </h1>
                         </div>
                         <div className='  flex text-xl gap-2'>
                             <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
 
-                            <h1 className='flex gap-2'>Living & Accommodation Cost of living in Uzbekistan is low, around 62 USD.</h1>
+                            <h1 className='flex gap-2'>Experience a welcoming and secure environment for your studies in Uzbekistan.
+                            </h1>
+                        </div>
+                        <div className='  flex text-xl gap-2'>
+                            <Image src={vector} alt='vector' className='text-xl  h-[25px] w-[25px] mt-1' />
+
+                            <h1 className='flex gap-2'>Gain valuable practical experience through clinical rotations in modern hospitals.
+
+                            </h1>
                         </div>
 
 
