@@ -3,7 +3,7 @@ import React from "react";
 const Intake = () => {
   return (
     <>
-      <div className="w-[90%] mx-auto overflow-x-auto py-6">
+      <div className="xl:w-[90%] mx-auto overflow-x-auto py-6">
         <h2 className="font-semibold text-[20px] text-[#16A8AF]">
           MBBS in Uzbekistan - Intake Date & Deadlines 2025
         </h2>

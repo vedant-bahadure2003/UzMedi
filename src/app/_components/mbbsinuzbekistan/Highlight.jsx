@@ -3,7 +3,7 @@ import React from "react";
 const Highlight = () => {
   return (
     <>
-      <div className="relative overflow-x-auto  sm:rounded-lg w-[90%] mx-auto py-5 ">
+      <div className="relative overflow-x-auto  sm:rounded-lg xl:w-[90%] mx-auto py-5 ">
         <h2 className="text-xl font-semibold text-[#16A8AF]">
           MBBS in Uzbekistan - Quick Highlights{" "}
         </h2>

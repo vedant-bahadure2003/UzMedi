@@ -3,7 +3,7 @@ import React from "react";
 const FeesStructure = () => {
   return (
     <>
-      <div className=" py-6 shadow-md shadow-gray-400 w-[90%] mx-auto ">
+      <div className=" py-6 shadow-md shadow-gray-400 xl:w-[90%] mx-auto ">
         <div className="relative overflow-x-auto   sm:rounded-lg w-[90%]  mx-auto   ">
           <h2 className="text-xl font-semibold text-[#16A8AF]">
             MBBS in Uzbekistan Fee Structure 2025{" "}

@@ -4,7 +4,7 @@ const AdmissionProcess = () => {
   return (
     <>
       {/* Admission Process for MBBS in Uzbekistan    */}
-      <div className=" w-[90%] mx-auto lg:mt-20 flex flex-col gap-5 mt-[5px]  p-1">
+      <div className="xl:w-[90%] mx-auto lg:mt-20 flex flex-col gap-5 mt-[5px]  p-1">
         <div className="flex flex-col justify-center items-start  mx-auto gap-2">
           <h2 className="text-xl font-semibold text-[#0da9b0]">
             Admission Process for MBBS in Uzbekistan{" "}

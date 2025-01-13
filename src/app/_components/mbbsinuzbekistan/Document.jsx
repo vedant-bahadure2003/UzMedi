@@ -6,7 +6,7 @@ const Document = () => {
   return (
     <>
       {/* Documents Required for MBBS in Uzbekistan */}
-      <div className=" w-[90%] mx-auto lg:mt-20 flex flex-col gap-3 mt-[40px]  p-1">
+      <div className=" xl:w-[90%] mx-auto lg:mt-20 flex flex-col gap-3 mt-[40px]  p-1">
         <div className="flex flex-col justify-center items-start gap-2">
           <h2 className="text-xl font-bold text-[#0da9b0]">
             Documents Required for MBBS in Uzbekistan

@@ -6,7 +6,7 @@ const Eligibility = () => {
   return (
     <>
       {/* Eligiblity Criteria for MBBS in Uzbekistan */}
-      <div className="  lg:mt-20 flex flex-col gap-5 mt-[10px] bg-[#FFF9EA] py-3 shadow-md shadow-gray-400 w-[90%] mx-auto">
+      <div className="  lg:mt-20 flex flex-col gap-5 mt-[10px] bg-[#FFF9EA] py-3 shadow-md shadow-gray-400 xl:w-[90%] mx-auto">
         <div className="flex flex-col justify-center items-start w-[90%] mx-auto gap-2">
           <h2 className="text-xl font-bold text-[#0da9b0]">
             Eligiblity Criteria for MBBS in Uzbekistan

@@ -6,7 +6,7 @@ import rafikiiii from "../../../../public/Images/rafikiii.png";
 const PassingPercentage = () => {
   return (
     <>
-      <div className="w-[90%] mx-auto py-5">
+      <div className="xl:w-[90%] mx-auto py-5">
         <h2 className="font-semibold text-[20px]  text-[#16A8AF]">
           FMGE Passing Percentage After Completing MBBS From Uzbekistan{" "}
         </h2>

@@ -3,7 +3,7 @@ import React from "react";
 const CourseOffered = () => {
   return (
     <>
-      <div className="w-[90%] mx-auto">
+      <div className="xl:w-[90%] mx-auto">
         <h2 className="font-semibold text-[20px] text-[#16A8AF]">
           Courses offered by Uzbekistan Medical Universities{" "}
         </h2>
