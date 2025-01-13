@@ -1,16 +1,18 @@
 import React from 'react'
 import Image from "next/image";
-import collegeImg from '../../../../../public/Images/collegeImg.png'
-import collegeBgImg from '../../../../../public/Images/collegeBgImg.png'
+import collegeImg from '../../../../public/Images/collegeImg.png'
+import collegeBgImg from '../../../../public/Images/collegeBgImg.png'
 import { BiRupee } from "react-icons/bi";
 import { MdLocationOn } from "react-icons/md";
 import FacultiesOffered from '@/app/_components/mbbsinuzbekistan/courses/FacultiesOffered';
+import FeeStructure from '@/app/_components/mbbsinuzbekistan/courses/FeeStructure';
 
 const page = () => {
+
     return (
         <>
             {/* BgImage */}
-            <div className='relative  w-full h-[300px]'>
+            <div className='relative  w-full h-[300px] sm:h-[400px]'>
                 {/* Bg Image */}
                 <div className='absolute h-[400px] w-full'>
                     <Image src={collegeImg} alt='collegeBgImg' className='w-full object-cover block sm:hidden h-[300px]' />
@@ -47,12 +49,13 @@ const page = () => {
                     </div>
                 </div>
             </div>
+            {/* FeeStructure */}
+            <FeeStructure />
+            {/* FacultiesOffered */}
             {[...Array(3)].map((card, index) => (
                 <FacultiesOffered key={index} />
             ))}
-            <div className='h-[200px]'>
 
-            </div>
         </>
 
     )

@@ -83,7 +83,6 @@ const CareerScope = () => {
                 alt="rightsign"
                 className="  h-[18px] w-[18px] mt-1"
               />
-
               <p className="text-sm gap-2 text-justify">
                 <b> Rule 1:</b> Eligible Students need to check the postgraduate
                 options after acquiring the MBBS degree in Uzbekistan. After

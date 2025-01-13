@@ -32,13 +32,13 @@ const Navbar = () => {
                                 <Link href="#">
                                     <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">About</h1>
                                 </Link>
-                                <Link href="/mbbs_in_uzbekistan">
+                                <Link href="/mbbs-in-uzbekistan">
                                     <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">MBBS in Uzbekistan</h1>
                                 </Link>
                                 <Link href="#">
                                     <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Universities</h1>
                                 </Link>
-                                <Link href="#">
+                                <Link href="/blog">
                                     <h1 className="text-xl md:text-lg text-black hover:text-[#16A8AF] cursor-pointer">Blogs</h1>
                                 </Link>
                                 <Link href="#">
@@ -58,13 +58,13 @@ const Navbar = () => {
                         <Link href="#">
                             <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">About</h1>
                         </Link>
-                        <Link href="/mbbs_in_uzbekistan">
+                        <Link href="/mbbs-in-uzbekistan">
                             <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">MBBS in Uzbekistan</h1>
                         </Link>
                         <Link href="#">
                             <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Universities</h1>
                         </Link>
-                        <Link href="#">
+                        <Link href="/blog">
                             <h1 className="text-base md:text-lg text-white hover:text-[#16A8AF] cursor-pointer">Blogs</h1>
                         </Link>
                         <Link href="#">

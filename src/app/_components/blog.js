@@ -7,7 +7,7 @@ const Blog = () => {
 
     return (
         <>
-            <div className="w-[90%] lg:w-[80%] mx-auto mt-[100px]">
+            <div className="w-[85%] lg:w-[80%] mx-auto mt-[20px]">
                 <h1 className="text-4xl font-bold text-center">
                     Our Latest <span className="text-[#0da9b0] underline">Blog</span>
                 </h1>
@@ -16,8 +16,8 @@ const Blog = () => {
                 </p>
                 <div className="flex overflow-x-auto gap-10 mt-10 scrollbar-hide">
                     {blogDetails.map((blog) => (
-                        <div key={blog.id} className="w-[290px] lg:w-[300px]   flex-shrink-0">
-                            <div className="w-[290px] lg:w-[300px] border border-gray-200 shadow-xl rounded-lg overflow-hidden">
+                        <div key={blog.id} className="w-[290px] lg:w-[300px] flex-shrink-0">
+                            <div className="w-[290px] lg:w-[300px] border border-gray-200 shadow-xl rounded-lg overflow-hidden h-full">
                                 <div>
                                     <img
                                         src={blog.blogImage}
@@ -25,7 +25,7 @@ const Blog = () => {
                                         className="w-full h-[200px] object-cover"
                                     />
                                 </div>
-                                <div className="p-3 flex flex-col gap-2">
+                                <div className="p-3 flex flex-col gap-2 h-[250px] justify-evenly">
                                     <p className="font-semibold text-gray-500">{blog.date}</p>
                                     <h1 className="text-xl font-semibold">{blog.blogHeading}</h1>
                                     <p className="text-gray-700 text-justify">{blog.blogContent}</p>

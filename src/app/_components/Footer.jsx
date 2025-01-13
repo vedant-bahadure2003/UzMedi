@@ -7,7 +7,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-[750px] border border-black bg-gradient-to-t from-[#005D61]  to-[#038f96] sm:bg-pink-200 md:bg-yellow-100 lg:bg-green-200 flex items-center justify-center pb-3 ">
+      <div className="w-full h-[750px] bg-gradient-to-t from-[#005D61]  to-[#038f96] sm:bg-pink-200 md:bg-yellow-100 lg:bg-green-200 flex items-center justify-center pb-3 ">
         <div className="flex flex-col gap-10 w-[90%] h-[620px]  text-white ">
           <div className="flex flex-col gap-4">
             <h1 className="text-[24px] underline underline-offset-4">About</h1>

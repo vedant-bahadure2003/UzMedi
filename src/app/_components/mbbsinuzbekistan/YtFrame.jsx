@@ -14,10 +14,10 @@ const YtFrame = () => {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                     ></iframe> */}
-          <iframe
+          {/* <iframe
             className="w-full h-[200px] sm:h-[350px] md:h-[500px] md:w-[80%] mx-auto mt-[20px] sm:mt-[40px] object-cover rounded-xl shadow-xl"
             src="https://www.youtube.com/embed/tgbNymZ7vqY"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </>
