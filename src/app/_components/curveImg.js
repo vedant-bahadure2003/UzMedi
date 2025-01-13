@@ -12,7 +12,7 @@ const CurveImg = () => {
                     <div className='w-full lg:w-[50%] h-auto '>
                         <div className='w-[90%] lg:w-[75%] h-full mx-auto flex flex-col gap-8 justify-center py-8'>
                             <div>
-                                <h1 className='text-3xl sm:text-4xl lg:text-5xl font-semibold'>
+                                <h1 className='text-3xl sm:text-4xl lg:text-[40px] font-semibold'>
                                     Why <span className='text-[#0da9b0]'>Uzbekistan Medi?</span>
                                 </h1>
                             </div>

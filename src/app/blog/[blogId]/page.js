@@ -47,10 +47,10 @@ const page = () => {
             </div>
 
             <div className=' xl:w-[70%]'>
-                <div className='w-[80%] mx-auto'>
+                <div className='w-[90%] mx-auto'>
                     {/* Profile Section */}
-                    <div className="flex items-center justify-center mt-4">
-                        <div className="w-[90%] sm:w-[85%] bg-white p-4 rounded-md shadow-md">
+                    <div className="flex items-center justify-start ml-[45px] mt-4 ">
+                        <div className="w-[90%] sm:w-[85%] bg-white p-4 rounded-md ">
                             <div className="flex gap-3 items-center">
                                 <div className="w-[50px] h-[50px]">
                                     <Image
@@ -67,9 +67,9 @@ const page = () => {
                     </div>
 
                     {/* Blog Content */}
-                    <div className='w-full flex flex-col mt-4'>
+                    <div className='w-full flex flex-col mt-4 '>
                         {/* Blog Image */}
-                        <div className='w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] mx-auto'>
+                        <div className='w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] mx-auto  ml-[60px]'>
                             <img
                                 src={blogs?.blogImage}
                                 alt='Blog Image'
@@ -78,7 +78,7 @@ const page = () => {
                         </div>
 
                         {/* Blog Text */}
-                        <div className='mt-4 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] mx-auto'>
+                        <div className='mt-4 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] ml-[60px]'>
                             <p className='text-justify'>{blogs?.blogContent}</p>
                         </div>
                     </div>
