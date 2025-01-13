@@ -24,7 +24,7 @@ const MBBS_Uzbekistan = () => {
         <>
             <Herosection />
             <div className=' xl:w-[70%]'>
-                <div className='w-[80%] mx-auto'>
+                <div className='xl:w-[80%] mx-auto'>
 
                     <Highlight />
                     <Planningform />
