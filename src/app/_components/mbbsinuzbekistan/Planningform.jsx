@@ -5,8 +5,8 @@ const Planningform = () => {
     <>
       {/* Form */}
       <div className="w-[90%] mx-auto h-fit ">
-        <div className="w-full h-fit md:h-[350px]  flex items-center justify-center">
-          <div className="p-4 mx-auto rounded-lg sm:border sm:w-[70%] h-fit  sm:border-gray-300 sm:shadow-lg bg-[#FFF7EE] ">
+        <div className="w-full h-fit md:h-[350px]   flex items-center justify-center">
+          <div className="p-4 mx-auto rounded-lg sm:border sm:w-[90%] h-fit  sm:border-gray-600 sm:shadow-lg bg-[#FFF7EE] ">
             <div className="flex flex-col gap-3">
               <h2 className="text-2xl lg:text-3xl font-semibold text-center  text-[#16A8AF]">
                 Planning To Study MBBS?

@@ -245,12 +245,12 @@ const Navbar = () => {
                 onClick={toggleMobileMenu}
               />
             </div>
-            <nav className="flex flex-col gap-6 mt-6 px-2 w-[500px] ">
+            <nav className="flex flex-col gap-6 mt-6 px-2 w-full sm:w-[500px]">
               {menuItems.map((item, index) => (
                 <div key={index}>
                   <Link
                     href={item.href}
-                    className="flex items-center font-semibold   gap-3 text-lg hover:bg-gray-200 transition duration-200 ease-in-out border-b  border-gray-400 pb-2 "
+                    className="flex items-center font-semibold overflow-hidden gap-3 text-lg hover:bg-gray-200 transition duration-200 ease-in-out border-b border-gray-400 pb-2"
                     onClick={() => {
                       if (item.dropdown) toggleDropdown(index);
                     }}
@@ -265,12 +265,12 @@ const Navbar = () => {
                     )}
                   </Link>
                   {item.dropdown && activeDropdown === index && (
-                    <ul className="pl-3 mt-2    hover:bg-gray-200 transition duration-200 ease-in-out pb-2">
+                    <ul className="pl-3 mt-2 hover:bg-gray-200 transition duration-200 ease-in-out pb-2">
                       {item.dropdown.map((subItem, subIndex) => (
                         <li key={subIndex}>
                           <Link
                             href={subItem.href}
-                            className=" text-lg pb-3 flex font-medium   border-b border-gray-400 text-black hover:text-black transition duration-200 ease-in-out"
+                            className="text-lg pb-3 flex font-normal border-b border-gray-400 text-black hover:text-black transition duration-200 ease-in-out"
                           >
                             {subItem.label}
                           </Link>

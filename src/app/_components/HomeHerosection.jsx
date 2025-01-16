@@ -24,7 +24,7 @@ const HomeHerosection = () => {
         <meta name="author" content="Uzbekistan Medi" />
       </Head>
 
-      <div className="h-[120vh] relative md:block hidden">
+      <div className="h-[109vh]  relative md:block hidden shadow-b shadow-xl">
         <div className="relative">
           <Image
             src={bgImage}
@@ -36,11 +36,11 @@ const HomeHerosection = () => {
           <Image
             src={doctor}
             alt="Doctor with stethoscope"
-            className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] lg:h-[500px] lg:w-[500px] xl:h-[600px] object-cover absolute bottom-0 xl:bottom-[-20%] right-0"
+            className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] lg:h-[500px] lg:w-[500px] xl:h-[600px] object-cover absolute bottom-0 xl:bottom-[-22%] right-0"
             priority
           />
         </div>
-        <div className="absolute top-[120px] w-full h-[100vh] xl:mt-0 z-10">
+        <div className="absolute top-[120px] w-full h-[100vh] xl:mt-0 z-10 ">
           <div className="w-[80%] mx-auto h-full flex flex-col items-stretch gap-2 md:gap-7">
             <div className="w-[90%] mx-auto h-auto flex items-center justify-center flex-col text-center">
               <h1
@@ -54,8 +54,8 @@ const HomeHerosection = () => {
                 Apply Now
               </button>
             </div>
-            <div className="w-[90%] md:w-[70%] text-white mt-[50px]">
-              <div className="text-xs md:text-sm lg:text-lg flex flex-col gap-2 md:gap-3 w-full md:w-[70%] mt-3">
+            <div className="w-[90%] md:w-[70%] text-white mt-[50px] ">
+              <div className="text-xs  md:text-sm lg:text-lg flex flex-col gap-2 md:gap-3 w-full md:w-[70%] mt-3">
                 <h1 className="flex gap-2">
                   <span className="mt-[2px] md:mt-[5px]">
                     <Image

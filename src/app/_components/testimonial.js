@@ -53,10 +53,6 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-
-      <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold text-teal-500 my-[60px] text-center">
-        Dream . Study . Achieve
-      </h2>
     </section>
   );
 };

@@ -23,13 +23,16 @@ const CurveImg = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <div className="w-full h-auto flex items-center justify-center mt-[40px]">
+      <div className="w-full h-[70vh] flex items-center justify-center mt-[40px]">
         <div className="w-[90%] mx-auto h-auto flex flex-col-reverse lg:flex-row">
           <div className="w-full lg:w-[50%] h-auto">
             <div className="w-[90%] lg:w-[75%] h-full mx-auto flex flex-col gap-8 justify-center py-8">
               <div>
-                <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold">
-                  Why <span className="text-[#0da9b0]">Uzbekistan Medi?</span>
+                <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-semibold ">
+                  Why{" "}
+                  <span className="text-[#0da9b0] underline">
+                    Uzbekistan Medi?
+                  </span>
                 </h2>
               </div>
               <div className="text-lg sm:text-xl flex flex-col gap-2">
@@ -82,7 +85,7 @@ const CurveImg = () => {
                 className="bg-[#0da9b0] w-[140px] sm:w-[160px] h-[40px] rounded-md text-white text-lg sm:text-xl font-semibold"
                 aria-label="Read more about Uzbekistan Medi"
               >
-                Read
+                Read More
               </button>
             </div>
           </div>

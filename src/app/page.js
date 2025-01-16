@@ -7,13 +7,12 @@ import Testimonials from "./_components/testimonial";
 import Partner from "./_components/patner";
 import Blog from "./_components/blog";
 import Galary from "./_components/galary";
-import doctor from "../../public/Images/doctor.png"
+import doctor from "../../public/Images/doctor.png";
 import Univercity from "./_components/university";
 import Services from "./_components/servicies";
 import ContactUs from "./_components/contactUs";
 import HomeHerosection from "./_components/HomeHerosection";
-
-
+import Faq from "./_components/Faq";
 export default function Home() {
   return (
     <>
@@ -23,8 +22,10 @@ export default function Home() {
       <CurveImg />
       <Services />
       <Partner />
+      <Testimonials />
       <Blog />
       <Galary />
+      <Faq />
     </>
   );
 }

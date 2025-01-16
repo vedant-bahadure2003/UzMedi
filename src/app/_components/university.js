@@ -1,32 +1,62 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Card from "./card";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Univercity = () => {
-  return (
-    <section
-      className="w-[80%] mx-auto mt-[100px]"
-      aria-labelledby="universities-title"
-    >
-      <header className="text-center">
-        <h1 id="universities-title" className="text-4xl font-bold">
-          Explore{" "}
-          <span className="text-[#0da9b0] underline">Medical Universities</span>{" "}
-          in Uzbekistan
-        </h1>
-        <p className="text-teal-700 mt-2">
-          We are affiliated with these prestigious institutions.
-        </p>
-      </header>
+  const scrollContainerRef = useRef(null);
 
-      <div
-        className="flex flex-wrap w-full items-center justify-center gap-5 lg:justify-between lg:gap-3 mt-10"
-        role="list"
-      >
-        {[...Array(4)].map((_, index) => (
-          <Card key={index} />
-        ))}
+  const scrollUniversities = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="w-[90%] md:w-[80%] mx-auto mt-[71px] relative">
+      <h1 className="text-2xl md:text-4xl font-bold text-center">
+        Explore{" "}
+        <span className="text-[#0da9b0] underline">Medical Universities</span>{" "}
+        in Uzbekistan
+      </h1>
+      <p className="text-center mt-2 text-base">
+        We are affiliated with these medical universities
+      </p>
+      <div className="w-full h-full mt-4 md:mt-10">
+        <div
+          className="w-full py-7 flex gap-5 overflow-x-auto scrollbar-hide"
+          ref={scrollContainerRef}
+        >
+          <div className="w-[270px] flex-shrink-0">
+            <Card />
+          </div>
+          <div className="w-[270px] flex-shrink-0">
+            <Card />
+          </div>
+          <div className="w-[270px] flex-shrink-0">
+            <Card />
+          </div>
+          <div className="w-[270px] flex-shrink-0">
+            <Card />
+          </div>
+          <div className="w-[270px] flex-shrink-0">
+            <Card />
+          </div>
+          <div className="w-[270px] flex-shrink-0">
+            <Card />
+          </div>
+        </div>
       </div>
-    </section>
+
+      {/* Scroll Button */}
+      <button
+        className="absolute right-0 top-[60%] transform -translate-y-1/2 bg-teal-500 p-3 rounded-full text-white shadow-lg"
+        onClick={scrollUniversities}
+      >
+        <IoIosArrowForward className="text-xl" />
+      </button>
+    </div>
   );
 };
 

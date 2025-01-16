@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { blogData } from "../dataFile/blogData/blogData";
 import Head from "next/head";
+import Image from "next/image";
 
 const Blog = () => {
   const [blogDetails, setBlogDetails] = useState(blogData);
@@ -36,16 +37,18 @@ const Blog = () => {
           {blogDetails.map((blog) => (
             <article
               key={blog.id}
-              className="w-[290px] lg:w-[300px] flex-shrink-0"
+              className="w-[290px] lg:w-[300px] flex-shrink-0 "
               role="listitem"
             >
-              <div className="w-[290px] lg:w-[300px] border border-gray-200 shadow-xl rounded-lg overflow-hidden h-full">
+              <div className="w-[290px] lg:w-[300px] border border-gray-200 shadow-xl rounded-lg overflow-hidden h-full  ">
                 <figure>
-                  <img
+                  <Image
                     src={blog.blogImage}
                     alt={`Image for blog titled "${blog.blogHeading}"`}
-                    className="w-full h-[200px] object-cover"
+                    className="w-full h-[200px] object-cover "
                     loading="lazy"
+                    width={500}
+                    height={200}
                   />
                 </figure>
                 <div className="p-3 flex flex-col gap-2 h-[250px] justify-evenly">
