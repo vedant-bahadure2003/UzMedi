@@ -68,7 +68,7 @@ const Navbar = () => {
     },
     {
       label: "About",
-      href: "#about",
+      href: "",
       icon: <IoMdInformationCircle className="text-xl text-gray-900" />,
       dropdown: [
         { label: "˃˃   Why Uzbekistan Medi", href: "/about#our-story" },
@@ -84,7 +84,7 @@ const Navbar = () => {
     },
     {
       label: "Universities",
-      href: "#universities",
+      href: "",
       icon: <FaUniversity className="text-xl text-gray-900" />,
       dropdown: [
         {
@@ -107,17 +107,17 @@ const Navbar = () => {
     },
     {
       label: "Blogs",
-      href: "#blogs",
+      href: "/blog",
       icon: <FaBlog className="text-xl text-gray-900" />,
     },
     {
       label: "Gallery",
-      href: "#gallery",
+      href: "/gallery",
       icon: <FaPhotoVideo className="text-xl text-gray-900" />,
     },
     {
       label: "Contact Us",
-      href: "#contact-us",
+      href: "/contactUs",
       icon: <FaPhoneAlt className="text-xl text-gray-900" />,
     },
   ];

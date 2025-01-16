@@ -1,155 +1,172 @@
-'use client'
-import axios from 'axios';
-import { useParams } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
-import collegeImg from '../../../../public/Images/collegeImg.png';
-import collegeBgImg from '../../../../public/Images/collegeBgImg.png';
+"use client";
+
+import axios from "axios";
+import { useParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import collegeImg from "../../../../public/Images/collegeImg.png";
+import collegeBgImg from "../../../../public/Images/collegeBgImg.png";
 import Profile from "../../../../public/Images/profile.png";
 import rightsign from "../../../../public/Images/vector.png";
-import Image from 'next/image';
 
-const page = () => {
-    const params = useParams();
-    const { ImageId } = params;
-    const [image, setImages] = useState();
+const Page = () => {
+  const { ImageId } = useParams();
+  const [image, setImage] = useState(null);
 
-    const galleryDetails = async () => {
-        const response = await axios(`http://localhost:3000/api/gallery/${ImageId}`);
-        setImages(response.data.image);
-        console.log(response.data.image);
-    };
+  // Fetch gallery details
+  const fetchGalleryDetails = async () => {
+    try {
+      const response = await axios.get(
+        `http://localhost:3000/api/gallery/${ImageId}`
+      );
+      setImage(response.data.image);
+    } catch (error) {
+      console.error("Failed to fetch gallery details:", error);
+    }
+  };
 
-    useEffect(() => {
-        galleryDetails();
-    }, [ImageId]);
+  useEffect(() => {
+    fetchGalleryDetails();
+  }, [ImageId]);
 
-    return (
-        <>
+  return (
+    <>
+      {/* Background Image Section */}
+      <header
+        aria-labelledby="gallery-header"
+        className="relative w-full h-[300px] sm:h-[400px]"
+      >
+        <div className="absolute h-full w-full">
+          <Image
+            src={collegeImg}
+            alt="Andijan State Medical Institute"
+            className="w-full object-cover block sm:hidden h-[300px]"
+            width={2048} // Set the image width
+            height={2048}
+            priority
+          />
+          <Image
+            src={collegeBgImg}
+            alt="Campus Overview of Andijan State Medical Institute"
+            className="w-full h-full object-cover hidden sm:block"
+            width={2048} // Set the image width
+            height={2048}
+            priority
+          />
+          <div className="absolute top-0 w-full h-full bg-black opacity-60"></div>
+        </div>
 
-            {/* BgImage */}
-            <div className="relative w-full h-[300px] sm:h-[400px]">
-                {/* Bg Image */}
-                <div className="absolute h-[400px] w-full">
-                    <Image src={collegeImg} alt="collegeBgImg" className="w-full object-cover block sm:hidden h-[300px]" />
-                    <Image src={collegeBgImg} alt="collegeBgImg" className="w-full h-full object-cover hidden sm:block sm:h-[380px]" />
-                    <div className="h-[300px] sm:h-[380px] w-full absolute top-0 bg-black opacity-60"></div>
-                </div>
-                <div className="absolute top-20 sm:top-24 text-white left-5 text-sm font-semibold">
-                    <p>Home / Gallery / <span className="text-[#16A8AF]">Photo</span></p>
-                </div>
-                {/* Heading */}
-                <div className="text-white absolute top-32 sm:top-44 w-[90%] sm:w-[50%] left-5 flex flex-col gap-1">
-                    <h1 className="text-4xl sm:text-5xl font-semibold mt-3 w-full">
-                        Photo
-                    </h1>
-                </div>
+        {/* Breadcrumb Navigation */}
+        <nav className="absolute top-20 sm:top-24 text-white left-5 text-sm font-semibold">
+          <p>
+            Home / Gallery / <span className="text-[#16A8AF]">Photo</span>
+          </p>
+        </nav>
+
+        {/* Page Title */}
+        <div
+          id="gallery-header"
+          className="absolute top-32 sm:top-44 text-white left-5 w-[90%] sm:w-[50%]"
+        >
+          <h1 className="text-4xl sm:text-5xl font-semibold mt-3">
+            Photo Gallery
+          </h1>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="xl:w-[70%] mx-auto">
+        {/* Profile Section */}
+        <section aria-labelledby="author-info" className="w-[80%] mx-auto mt-4">
+          <div
+            id="author-info"
+            className="flex items-center bg-white p-4 rounded-md shadow"
+          >
+            <Image
+              src={Profile}
+              alt="Profile Picture of XYZ Employee"
+              className="w-[50px] h-[50px] rounded-full"
+              width={2048} // Set the image width
+              height={2048}
+            />
+            <div className="ml-3">
+              <h2 className="font-semibold">XYZ Employee</h2>
             </div>
+          </div>
+        </section>
 
-            {/* Profile */}
-            <div className=' xl:w-[70%]'>
-                <div className='w-[80%] mx-auto'>
-                    <div className="flex items-center h-[70px] justify-center mt-[10px]">
-                        <div className="w-[85%] flex flex-col gap-4 bg-white">
-                            <div className="flex gap-3 w-full h-[50px] items-center justify-start">
-                                <div className="w-[50px] h-[50px]">
-                                    <Image
-                                        src={Profile}
-                                        alt="profile"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="font-semibold">
-                                    <h2>XYZ Employee</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        {/* Single Image Display */}
+        <section
+          aria-labelledby="gallery-image"
+          className="w-[85%] mx-auto mt-6"
+        >
+          <div className="flex justify-center items-center">
+            <Image
+              src={image?.galaryImage || "/default-image.jpg"}
+              alt="Gallery Display"
+              width={800}
+              height={450}
+              className="rounded-md object-cover"
+              loading="lazy"
+            />
+          </div>
+        </section>
 
-                    {/* Single Image Page */}
-                    <div className="w-full flex flex-col mt-[20px]">
-                        <div className="w-[85%] mx-auto flex justify-center items-center">
-                            <img
-                                src={image?.galaryImage}
-                                alt="Gallery Image"
-                                className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[60vh] rounded-md object-cover"
-                            />
-                        </div>
-                    </div>
-
-
-                    {/* Why Study in Uzbekistan */}
-                    <div className="w-full lg:mt-20 flex flex-col gap-5 py-6">
-                        <h2 className="text-xl font-bold w-[85%] mx-auto text-[#0da9b0]">
-                            Why Study MBBS in Uzbekistan?
-                        </h2>
-                        <p className="w-[85%] mx-auto text-justify font-semibold">
-                            Studying MBBS in Russia stands as the best option for Indian students seeking for the best and most cost-effective medical education in Russia. Top Medical universities in Russia are equipped with all the facilities to educate and train International medical aspirants to become excellent doctors.
-                        </p>
-                        <div className="text-lg sm:text-[18px] flex flex-col gap-2 w-[85%] mx-auto">
-                            <div className="text-sm sm:text-[18px] flex flex-col gap-2">
-                                <div className="flex gap-2">
-                                    <Image
-                                        src={rightsign}
-                                        alt="vector"
-                                        className="h-[18px] w-[18px] mt-1"
-                                    />
-                                    <p className="gap-2 text-justify">
-                                        <span className="font-semibold">Quality Education: </span>Recognized medical programs with modern facilities.
-                                    </p>
-                                </div>
-                                <div className="flex gap-2">
-                                    <Image
-                                        src={rightsign}
-                                        alt="vector"
-                                        className="h-[18px] w-[18px] mt-1"
-                                    />
-                                    <p className="gap-2 text-justify">
-                                        <span className="font-semibold">Affordability: </span>Budget-friendly tuition fees and living costs.
-                                    </p>
-                                </div>
-                                <div className="flex gap-2">
-                                    <Image
-                                        src={rightsign}
-                                        alt="vector"
-                                        className="h-[18px] w-[18px] mt-1"
-                                    />
-                                    <p className="gap-2 text-justify">
-                                        <span className="font-semibold">English-Medium Program: </span> Easy access for international students.
-                                    </p>
-                                </div>
-                                <div className="flex gap-2">
-                                    <Image
-                                        src={rightsign}
-                                        alt="vector"
-                                        className="h-[18px] w-[18px] mt-1"
-                                    />
-                                    <p className="gap-2 text-justify">
-                                        <span className="font-semibold">Academic Diversity: </span>Cultural and exposure to a global environment.
-                                    </p>
-                                </div>
-                                <div className="flex gap-2">
-                                    <Image
-                                        src={rightsign}
-                                        alt="vector"
-                                        className="h-[18px] w-[18px] mt-1"
-                                    />
-                                    <p className="gap-2 text-justify">
-                                        <span className="font-semibold">Global Recognition: </span>Internationally accepted degrees and accreditations.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-[85%] mx-auto">
-                            <button className="mt-3 bg-[#0da9b0] text-white py-1 px-2 text-sm rounded-md shadow-lg hover:bg-[#479b9f] w-full text-justify">
-                                <span className="text-black">Read More:</span> Why Choose
-                                Uzbekistan for MBBS Studies?
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    );
+        {/* Why Study in Uzbekistan Section */}
+        <section aria-labelledby="study-mbbs" className="w-[85%] mx-auto py-6">
+          <h2 id="study-mbbs" className="text-xl font-bold text-[#0da9b0]">
+            Why Study MBBS in Uzbekistan?
+          </h2>
+          <p className="mt-2 text-justify font-semibold">
+            Studying MBBS in Russia stands as the best option for Indian
+            students seeking cost-effective medical education. Top Medical
+            universities in Russia are equipped with facilities to train
+            international students to become excellent doctors.
+          </p>
+          <ul className="text-lg mt-4 flex flex-col gap-2">
+            {[
+              {
+                title: "Quality Education",
+                desc: "Recognized medical programs with modern facilities.",
+              },
+              {
+                title: "Affordability",
+                desc: "Budget-friendly tuition fees and living costs.",
+              },
+              {
+                title: "English-Medium Program",
+                desc: "Easy access for international students.",
+              },
+              {
+                title: "Academic Diversity",
+                desc: "Cultural exposure to a global environment.",
+              },
+              {
+                title: "Global Recognition",
+                desc: "Internationally accepted degrees and accreditations.",
+              },
+            ].map((item, index) => (
+              <li key={index} className="flex gap-2">
+                <Image
+                  src={rightsign}
+                  alt="Bullet Point Icon"
+                  width={18}
+                  height={18}
+                />
+                <span>
+                  <strong>{item.title}:</strong> {item.desc}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <button className="mt-3 bg-[#0da9b0] text-white py-1 px-2 rounded-md shadow-lg hover:bg-[#479b9f]">
+            <span className="text-black">Read More:</span> Why Choose Uzbekistan
+            for MBBS Studies?
+          </button>
+        </section>
+      </main>
+    </>
+  );
 };
 
-export default page;
+export default Page;

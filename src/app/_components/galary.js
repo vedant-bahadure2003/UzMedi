@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { galaryData } from "../dataFile/galaryData/galaryData";
 import Head from "next/head";
+import Image from "next/image";
 
 const Galary = () => {
   const [galary, setImage] = useState(galaryData);
@@ -33,11 +34,13 @@ const Galary = () => {
           <div className="flex gap-10 w-max">
             {galary.map((image, index) => (
               <figure key={index} className="flex-shrink-0" role="listitem">
-                <img
+                <Image
                   src={image.galaryImage}
-                  alt={`Gallery image ${index + 1}`}
+                  alt="Gallery image"
                   className="w-[300px] h-[270px] lg:w-[350px] rounded-lg object-cover"
                   loading="lazy"
+                  width={200}
+                  height={300}
                 />
               </figure>
             ))}
